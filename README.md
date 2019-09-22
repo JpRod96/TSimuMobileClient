@@ -8,7 +8,8 @@ La aplicacion esta desarrollada en Ionic, por lo que este y Nodejs deben estar i
 
 - Para instalar Ionic, usando npm, ejecute el siguiente comando en una consola: 
 **npm install -g ionic**
-
+- Para usar todas las caracteristicas de [apache-cordova](https://cordova.apache.org/) con Ionic
+**npm i -g cordova-res**
   
 # Instrucciones
 

@@ -22,8 +22,10 @@ La aplicacion esta desarrollada en Ionic, por lo que este y Nodejs deben estar i
 4. ionic serve
 
 # Instrucciones para generacion de APK
-1. ionic cordova platform add android
-2. ionic cordova build android
+Nota: para la generacion del apk se necesita Android Studio y Java instalado.
+1. cordova telemetry on
+2. ionic cordova platform add android
+3. ionic cordova build android
 
 De ocurrir algun error relacionado con las dependencias en node_modules, hacer lo siguiente:
 

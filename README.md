@@ -21,8 +21,12 @@ La aplicacion esta desarrollada en Ionic, por lo que este y Nodejs deben estar i
 
 4. ionic serve
 
+# Requisitos generacion APK
+1. Android Studio
+2. En Android Studio tener instalado el SDK de Android desde el API level 19 (Android 4.4)
+3. Java
+4. Gradle
 # Instrucciones para generacion de APK
-Nota: para la generacion del apk se necesita Android Studio y Java instalado.
 1. cordova telemetry on
 2. ionic cordova platform add android
 3. ionic cordova build android

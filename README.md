@@ -14,7 +14,7 @@ La aplicacion esta desarrollada en Ionic, por lo que este y Nodejs deben estar i
 
 1. git clone https://github.com/JpRod96/TSimuMobileClient.git
 
-2. git cd tSimuMobileClient
+2. cd tSimuMobileClient
 
 3. npm install
 
@@ -30,4 +30,5 @@ De ocurrir algun error relacionado con las dependencias en node_modules, hacer l
 2. Eliminar la carpeta node_modules 
 3. Eliminar el archivo package-lock.json
 4. npm install
+
 Y ejecutar los 2 comandos anteriores

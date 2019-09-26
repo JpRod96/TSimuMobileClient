@@ -37,6 +37,7 @@ body{
     text-align: center; 
     background: #869ace; 
     margin: 0 0 25px; 
+    margin-top: 3em;
     overflow: hidden; 
     padding: 20px; 
     border-radius: 35px 0px 35px 0px; 
@@ -57,12 +58,13 @@ body{
     position: relative;
     left: 22%;
     text-align: center;
+    border-radius: 10%;
 }
 
 @media only screen and (max-width: 768px) {
     .contenedor2 {
         width: 75vw;
-        left: 7%;
+        left: 6vh;
     }
 }
 
@@ -95,7 +97,7 @@ body{
     .contenedor-denuncias {
         width: 97vw;
         left: 0.1%;
-        margin-left: -1%;
+        margin-left: 1.5%;
         border-radius: 5%;
         padding: 2vh 0 4vh 0;
     }
@@ -106,6 +108,8 @@ table{
     background:rgba(178, 179, 177, 0.836);
     border-collapse: collapse;
     width: 25vw;
+    color: black;
+    margin-left: 3%;
 }
 table td{
     border: 1 px solid #000;
@@ -167,6 +171,9 @@ input[type="submit"]:hover{
         width: 85%;
         left: 5%;
     }
+    table{
+        margin-left: 1%;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -175,7 +182,11 @@ input[type="submit"]:hover{
         left: -0.2%;
         margin-left: -2.5%;
     }
+    table{
+        margin-left: -3.2%;
+    }
 }
+
 
 #procesandoFELCV {
     background-color: #f51616;

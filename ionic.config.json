@@ -1,5 +1,7 @@
 {
   "name": "TSimuMobileClient",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

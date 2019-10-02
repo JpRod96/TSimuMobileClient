@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RestService } from '../rest.service'
+import { EventRepositoryService } from '../event-repository.service'
 
 @Component({
   selector: 'app-home',
@@ -9,11 +9,12 @@ import { RestService } from '../rest.service'
 export class HomePage {
   private events:any;
 
-  constructor(private restService: RestService) {
+  constructor(private eventRepository: EventRepositoryService) {
     this.chargeEvents();
   }
 
   private async chargeEvents(){
-    this.events = await this.restService.getEvents();
+    this.events = await this.eventRepository.getAll();
+    console.log(this.events)
   }
 }

@@ -7,14 +7,23 @@ import { HttpClient } from  '@angular/common/http';
 export class RestService {
 
   private apiUrl: string = 'http://pruebatsimu.herokuapp.com';
-  private EVENTS_URL: string = "/events";
-  private EVENT_URL: string = "/event";
-  constructor(public http: HttpClient) {
+  constructor(private http: HttpClient) {
   }
 
-  async getEvents(){
+  async get(url:string){
     return new Promise(resolve => {
-      this.http.get(this.apiUrl + this.EVENTS_URL)
+      this.http.get(this.apiUrl + url)
+      .subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
+  async post(url:string, data:any){
+    return new Promise(resolve => {
+      this.http.post(this.apiUrl + url, data)
       .subscribe(data => {
         resolve(data);
       }, err => {

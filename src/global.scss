@@ -267,6 +267,7 @@ table{
 }
 
 .bgGreenTurkish{
+    transition: 500ms;
     background-color: rgb(62, 157, 235);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -274,6 +275,7 @@ table{
 .bgGreenTurkish:hover{
     transition: 500ms;
     background-color: rgb(52, 127, 189);
+    color: rgb(255, 255, 255)
 }
 
 .action-form{

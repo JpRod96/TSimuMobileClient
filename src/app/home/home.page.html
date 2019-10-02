@@ -23,11 +23,22 @@
       <table>
         <thead>
           <tr class="center-elements">
-              <td><strong>Nombre denuncia</strong></td>
+              <td><strong>Codigo denuncia</strong></td>
               <td><strong>Ver estado denuncia</strong></td>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          <tr *ngFor="let event of events">
+            <td>
+              <a class="link">{{event.id}}</a>
+            </td>
+            <td>
+                <form class="play-form">
+                    <button class="play-button">Iniciar Simulacion</button>
+                </form>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>  
     <div class="table-div">

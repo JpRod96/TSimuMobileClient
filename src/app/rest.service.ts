@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from  '@angular/common/http';
 })
 export class RestService {
 
-  private apiUrl: string = 'http://pruebatsimu.herokuapp.com';
+  private apiUrl: string = 'http://10.0.0.5:4567'//'http://pruebatsimu.herokuapp.com';
   constructor(private http: HttpClient) {
   }
 
@@ -25,7 +25,7 @@ export class RestService {
     let headers:HttpHeaders = new HttpHeaders();
     headers.append('Content-Type', 'undefined' );
     return new Promise(resolve => {
-      this.http.post(this.apiUrl + url, data, {headers: headers})
+      this.http.post(this.apiUrl + url, JSON.stringify(data))
       .subscribe(data => {
         resolve(data);
       }, err => {

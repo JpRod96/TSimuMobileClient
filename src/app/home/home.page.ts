@@ -23,4 +23,9 @@ export class HomePage {
     this.navCtrl.pop()
     this.navCtrl.navigateForward('/register');
   }
+
+  private seeEvent(id:string){
+    this.navCtrl.pop()
+    this.navCtrl.navigateForward('/event-summary/' + id);
+  }
 }

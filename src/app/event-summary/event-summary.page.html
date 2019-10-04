@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Resumen de la Denuncia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content overflow-scroll="false" class="bodyBg">
+    <div class="contenedor1">
+        <h1>Resumen de Denuncia</h1><br>
+    </div>
+        <div class="contenedor2 div-form">
+        <div>
+            <h1>Denuncia: {{event.id}}</h1>
+        </div>
+        <div>
+            <label for="tipo">Tipo denuncia:</label>
+            <select name="tipo" size="1" disabled>
+                <option value="denuncia">Denuncia</option>
+                <option value="querella">Querella</option>       
+            </select>
+        </div>
+        <div>
+            <label for="fechaEvento">Fecha Evento:</label>
+            <input type="text" value="{{event.date}}" disabled><br>
+        </div>
+        <div>
+            <label for="fechaDenuncia">Fecha Denuncia:</label>
+            <input type="text" value="{{event.delationDate}}" disabled ><br>
+        </div>
+        <div>
+            <label for="ubicacion">Ubicacion:</label>
+            <input type="text" id="ubicacion" placeholder="{{event.locationDescription}}" disabled><br>
+        </div>
+        <div>
+            <label for="descripcion">Descripcion:</label>
+            <textarea id="descripcion" disabled>{{event.description}}</textarea><br>
+        </div>
+        <form action="" class="action-form">
+            <button>Ver historial de Proceso</button>
+        </form>
+    </div>
+    <form class="action-form">
+      <button (click) = goBack() class="bgGreenTurkish">Atras</button>
+    </form>
+</ion-content>

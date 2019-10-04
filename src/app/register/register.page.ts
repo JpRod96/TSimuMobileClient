@@ -30,9 +30,9 @@ export class RegisterPage implements OnInit {
     let inputDateString = this.event.timeMsEventDate;
     this.event.timeMsEventDate = new Date(inputDateString)
     this.event.timeMsEventDate = this.event.timeMsEventDate.getTime();
-    await this.eventRepository.save(this.event)
+    this.event = await this.eventRepository.save(this.event)
     this.navCtrl.pop()
-    this.navCtrl.navigateForward('/home');
+    this.navCtrl.navigateForward('/event-summary/' + this.event.id);
   }
 
   private goBack(){

@@ -20,7 +20,12 @@ export class EventRepositoryService {
   }
 
   public async save(event:any){
-    this.restService.post(this.EVENT_URL, event);
+    return this.restService.post(this.EVENT_URL, event);
+  }
+
+  public async getById(id:string){
+    let json = await this.restService.get(this.EVENT_URL + "/" + id)
+    return this.parse(json);
   }
 
   private parse(json){

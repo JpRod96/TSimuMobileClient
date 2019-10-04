@@ -30,7 +30,7 @@
         <tbody>
           <tr *ngFor="let event of events">
             <td>
-              <a class="link">{{event.id}}</a>
+              <a (click)=seeEvent(event.id) class="link">{{event.id}}</a>
             </td>
             <td>
                 <form class="play-form">

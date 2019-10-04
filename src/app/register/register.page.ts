@@ -32,10 +32,12 @@ export class RegisterPage implements OnInit {
     this.event.timeMsEventDate = this.event.timeMsEventDate.getTime();
     await this.eventRepository.save(this.event)
     this.navCtrl.pop()
+    this.navCtrl.navigateForward('/home');
   }
 
   private goBack(){
     this.navCtrl.pop()
+    this.navCtrl.navigateForward('/home');
   }
 
 }

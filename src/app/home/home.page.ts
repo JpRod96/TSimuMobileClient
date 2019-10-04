@@ -20,6 +20,7 @@ export class HomePage {
   }
 
   private goToRegistePage(){
+    this.navCtrl.pop()
     this.navCtrl.navigateForward('/register');
   }
 }

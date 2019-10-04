@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from  '@angular/common/http';
 })
 export class RestService {
 
-  private apiUrl: string = 'http://10.0.0.5:4567'//'http://pruebatsimu.herokuapp.com';
+  private apiUrl: string = 'http://pruebatsimu.herokuapp.com';//'http://10.0.0.5:4567'
   constructor(private http: HttpClient) {
   }
 

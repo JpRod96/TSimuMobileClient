@@ -87,8 +87,27 @@
     }
 }
 
+@media only screen and (max-width: 360px) {
+    .div-form{
+        width: 85vw;
+        left: 7%;
+    }
+}
+
 .div-form label{
     font-size: 1em;
+}
+
+.div-form input{
+    color: #000;
+}
+
+.div-form textarea{
+    color: #000;
+}
+
+.div-form select{
+    color: #000;
 }
 
 .contenedor-denuncias{

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { EventRepositoryService } from '../event-repository.service'
+import { NavController } from '@ionic/angular'
 
 @Component({
   selector: 'app-home',
@@ -9,12 +10,16 @@ import { EventRepositoryService } from '../event-repository.service'
 export class HomePage {
   private events:any;
 
-  constructor(private eventRepository: EventRepositoryService) {
+  constructor(private eventRepository: EventRepositoryService,
+              private navCtrl: NavController) {
     this.chargeEvents();
   }
 
   private async chargeEvents(){
     this.events = await this.eventRepository.getAll();
-    console.log(this.events)
+  }
+
+  private goToRegistePage(){
+    this.navCtrl.navigateForward('/register');
   }
 }

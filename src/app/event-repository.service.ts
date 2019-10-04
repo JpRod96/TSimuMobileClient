@@ -14,16 +14,16 @@ export class EventRepositoryService {
     let events: Array<Event> = new Array;
     let jsonList = await this.restService.get(this.EVENTS_URL)
     for(let json of <any>jsonList){
-      events.push(this.parser(json));
+      events.push(this.parse(json));
     }
     return events;
   }
 
-  public async save(event:Event){
+  public async save(event:any){
     this.restService.post(this.EVENT_URL, event);
   }
 
-  private parser(json){
+  private parse(json){
     return new Event(json.id, 
                     json.date, 
                     json.delationDate, 

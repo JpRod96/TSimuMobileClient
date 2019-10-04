@@ -4,6 +4,7 @@ export class Event {
     delationDate: any;
     description: string;
     locationDescription: string;
+    initialState: string;
 
     constructor(id,
                 date,
